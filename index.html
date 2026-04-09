@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les Nuits Nomades #2 - Que Onda | 24 Avril 2026 - Annecy</title>
+  <meta name="description" content="Les Nuits Nomades #2 Que Onda - Festival culturel gratuit le 24 avril 2026 au Parc du 8 Mai 1945, Cran-Gevrier, Annecy. Musique, contes, gastronomie mexicaine.">
+  <meta property="og:title" content="Les Nuits Nomades #2 - Que Onda">
+  <meta property="og:description" content="Festival culturel gratuit - 24 Avril 2026 - Annecy">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌮</text></svg>">
+</head>
+<body>
+  <a href="#main" class="skip-link">Aller au contenu principal</a>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="nav__bar">
+      <a href="#hero" class="nav__brand" aria-label="Accueil">
+        <img src="docs/logo.png" alt="Les Nuits Nomades" class="nav__logo" width="44" height="44">
+        <span class="nav__brand-text">Les Nuits Nomades</span>
+      </a>
+      <nav class="nav__menu" id="nav-menu" aria-label="Navigation principale">
+        <a href="#projet" class="nav__link">Le Projet</a>
+        <a href="#programmation" class="nav__link">Programme</a>
+        <a href="#activites" class="nav__link">Activit&eacute;s</a>
+        <a href="#edition-2025" class="nav__link">2025</a>
+        <a href="#association" class="nav__link">432 HZ</a>
+        <a href="#partenaires" class="nav__link">Partenaires</a>
+      </nav>
+      <div class="nav__right">
+        <button class="nav__theme-toggle" id="theme-toggle" aria-label="Changer le th&egrave;me">
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="nav__hamburger" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero__bg"></div>
+      <div class="hero__overlay"></div>
+      <div class="hero__content container">
+        <h1 class="hero__title">
+          Les Nuits<br>
+          <span class="hero__title-accent">Nomades</span>
+          <span class="hero__edition">#2</span>
+        </h1>
+        <p class="hero__subtitle">&laquo; Que Onda &raquo;</p>
+        <div class="hero__info">
+          <div class="hero__info-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Vendredi 24 Avril 2026
+          </div>
+          <div class="hero__info-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            17h &ndash; 22h
+          </div>
+          <div class="hero__info-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Parc du 8 Mai 1945, Cran-Gevrier
+          </div>
+        </div>
+        <span class="hero__badge">Entr&eacute;e Libre</span>
+        <div class="countdown" id="countdown">
+          <div class="countdown__unit">
+            <span class="countdown__number" id="days">--</span>
+            <span class="countdown__label">Jours</span>
+          </div>
+          <div class="countdown__unit">
+            <span class="countdown__number" id="hours">--</span>
+            <span class="countdown__label">Heures</span>
+          </div>
+          <div class="countdown__unit">
+            <span class="countdown__number" id="minutes">--</span>
+            <span class="countdown__label">Minutes</span>
+          </div>
+          <div class="countdown__unit">
+            <span class="countdown__number" id="seconds">--</span>
+            <span class="countdown__label">Secondes</span>
+          </div>
+        </div>
+        <a href="#programmation" class="hero__cta">D&eacute;couvrir le programme</a>
+      </div>
+      <div class="hero__scroll-hint" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg>
+      </div>
+    </section>
+
+    <!-- Le Projet -->
+    <section class="section section--alt section--bg" id="projet" aria-labelledby="projet-title">
+      <div class="container">
+        <h2 class="section__title reveal" id="projet-title">
+          <span class="section__title-accent">Le Projet</span>
+          Les Nuits Nomades
+        </h2>
+        <p class="section__intro reveal">
+          Dans un monde o&ugrave; les diff&eacute;rences culturelles peuvent parfois &ecirc;tre sources de division, cet &eacute;v&eacute;nement de proximit&eacute; et en plein air constitue une occasion de r&eacute;unir tous les publics autour de la culture.
+        </p>
+        <div class="values-grid">
+          <div class="value-card reveal">
+            <div class="value-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 class="value-card__title">Le Vivre Ensemble</h3>
+            <p>A la fois festif et inclusif, il vise &agrave; rassembler des personnes de tous horizons, origines culturelles et de g&eacute;n&eacute;rations vari&eacute;es, dans un m&ecirc;me espace de partage et d&rsquo;&eacute;change.</p>
+          </div>
+          <div class="value-card reveal">
+            <div class="value-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+            </div>
+            <h3 class="value-card__title">Un &Eacute;v&eacute;nement Pour Tous</h3>
+            <p>L&rsquo;acc&egrave;s gratuit garantit qu&rsquo;il soit ouvert &agrave; tous, quels que soient l&rsquo;&acirc;ge, le statut social ou les origines. Le parc devient un lieu de rencontre o&ugrave; les fronti&egrave;res s&rsquo;effacent.</p>
+          </div>
+          <div class="value-card reveal">
+            <div class="value-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <h3 class="value-card__title">Projet Solidaire</h3>
+            <p>En mobilisant le tissu associatif local et international, l&rsquo;association 432 HZ permet &agrave; des projets solidaires de financer une partie de leurs actions et de leurs missions.</p>
+          </div>
+          <div class="value-card reveal">
+            <div class="value-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+            </div>
+            <h3 class="value-card__title">Soutenir les Artistes Locaux</h3>
+            <p>La programmation propose un espace d&rsquo;expression &agrave; des artistes du territoire, du monde du spectacle vivant, en r&eacute;mun&eacute;rant chacun&middot;e d&rsquo;entre eux&middot;elles.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Programmation -->
+    <section class="section section--bg" id="programmation" aria-labelledby="prog-title">
+      <div class="container">
+        <h2 class="section__title reveal" id="prog-title">
+          <span class="section__title-accent">17h &ndash; 22h</span>
+          La Programmation
+        </h2>
+        <div class="timeline">
+          <div class="timeline__item reveal">
+            <div class="timeline__time">17h</div>
+            <div class="timeline__content">
+              <h3>Contes du Mexique et d&rsquo;Am&eacute;rique Centrale</h3>
+              <p class="timeline__artist">C. Allessio</p>
+              <p class="timeline__meta">45 min &middot; Tout public</p>
+              <p>Les contes circulent d&rsquo;oreilles en bouches. Ils disent ce qu&rsquo;ils savent du monde. Ceux-l&agrave; sont originaires d&rsquo;Am&eacute;rique Centrale et du Mexique. Ils ont beaucoup voyag&eacute;, d&rsquo;oreille en bouche et de bouche en oreille, dans leur langue d&rsquo;origine et puis dans d&rsquo;autres aussi.</p>
+            </div>
+          </div>
+          <div class="timeline__item reveal">
+            <div class="timeline__time">18h30</div>
+            <div class="timeline__content">
+              <h3>D&eacute;ambulation de Mariachis</h3>
+              <p class="timeline__artist">Jalisco Kings <span class="timeline__origin">(Lyon)</span></p>
+              <p class="timeline__meta">30 min &middot; Tout public</p>
+              <p>D&eacute;ambulation &agrave; travers le parc, au rythme des sonorit&eacute;s traditionnelles mexicaines. Les Mariachis mettront le public de bonne humeur avec leurs m&eacute;lodies joyeuses traditionnelles et leurs costumes hauts en couleurs.</p>
+            </div>
+          </div>
+          <div class="timeline__item reveal">
+            <div class="timeline__time">19h</div>
+            <div class="timeline__content">
+              <h3>Concert de Mariachis</h3>
+              <p class="timeline__artist">Jalisco Kings <span class="timeline__origin">(Lyon)</span></p>
+              <p class="timeline__meta">60 min &middot; Tout public</p>
+              <p>Les 4 musiciens seront accompagn&eacute;s d&rsquo;une danseuse en costume traditionnel. Ils interpr&eacute;teront la musique des mariachis, boleros et grands succ&egrave;s mexicains.</p>
+            </div>
+          </div>
+          <div class="timeline__item reveal">
+            <div class="timeline__time">20h30</div>
+            <div class="timeline__content">
+              <h3>Concert</h3>
+              <p class="timeline__artist">Rodrigo et ses Amis <span class="timeline__origin">(Haute-Savoie)</span></p>
+              <span class="timeline__badge">En cours de validation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Activites -->
+    <section class="section section--alt section--bg" id="activites" aria-labelledby="activites-title">
+      <div class="container">
+        <h2 class="section__title reveal" id="activites-title">
+          <span class="section__title-accent">Mais Aussi</span>
+          Les Nuits Nomades #2
+        </h2>
+        <div class="activities-grid">
+          <div class="activity-card reveal">
+            <div class="activity-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+            </div>
+            <h3 class="activity-card__title">Performance Graff</h3>
+            <p>L&rsquo;artiste ann&eacute;cien KASUR r&eacute;alisera en fil rouge une fresque inspir&eacute;e de l&rsquo;&eacute;v&eacute;nement, en graffiti. Une tombola &agrave; participation libre permettra de financer son travail.</p>
+          </div>
+          <div class="activity-card reveal">
+            <div class="activity-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+            </div>
+            <h3 class="activity-card__title">Animation Enfants</h3>
+            <p>Ateliers de fabrication de masques traditionnels, maquillage, course de karts &agrave; p&eacute;dales&hellip; tout pour ravir les enfants et offrir un espace adapt&eacute; aux familles.</p>
+          </div>
+          <div class="activity-card reveal">
+            <div class="activity-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+            </div>
+            <h3 class="activity-card__title">Espace Restauration</h3>
+            <p>Laissez-vous tenter par la cuisine mexicaine : v&eacute;ritable explosion de saveurs et de couleurs, voyage sensoriel et solidaire.</p>
+          </div>
+          <div class="activity-card reveal">
+            <div class="activity-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" y1="2" x2="6" y2="4"/><line x1="10" y1="2" x2="10" y2="4"/></svg>
+            </div>
+            <h3 class="activity-card__title">Espace Buvette</h3>
+            <p>Bi&egrave;res artisanales et boissons rafra&icirc;chissantes pour vous hydrater et vous offrir un espace de convivialit&eacute; !</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Edition Precedente -->
+    <section class="section section--bg" id="edition-2025" aria-labelledby="edition-title">
+      <div class="container">
+        <h2 class="section__title reveal" id="edition-title">
+          <span class="section__title-accent">#1&egrave;re &Eacute;dition &mdash; 2025</span>
+          Africa Teranga
+        </h2>
+        <p class="section__intro reveal">
+          Le terme &laquo; teranga &raquo; vient du wolof et d&eacute;signe l&rsquo;hospitalit&eacute;, la g&eacute;n&eacute;rosit&eacute; et l&rsquo;accueil chaleureux r&eacute;serv&eacute; aux invit&eacute;s. Apr&egrave;s le succ&egrave;s de cette premi&egrave;re &eacute;dition, place au Mexique !
+        </p>
+        <div class="stats-grid">
+          <div class="stat reveal">
+            <span class="stat__number" data-target="360">0</span>
+            <span class="stat__label">Personnes</span>
+          </div>
+          <div class="stat reveal">
+            <span class="stat__number" data-target="12">0</span>
+            <span class="stat__label">B&eacute;n&eacute;voles</span>
+          </div>
+          <div class="stat reveal">
+            <span class="stat__number" data-target="2">0</span>
+            <span class="stat__label">Concerts</span>
+          </div>
+          <div class="stat reveal">
+            <span class="stat__number" data-target="11">0</span>
+            <span class="stat__label">Artistes</span>
+          </div>
+          <div class="stat reveal">
+            <span class="stat__number" data-target="4">0</span>
+            <span class="stat__label">Heures de spectacle</span>
+          </div>
+          <div class="stat reveal">
+            <span class="stat__number" data-target="185">0</span>
+            <span class="stat__label">Repas distribu&eacute;s</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Association 432 HZ -->
+    <section class="section section--alt section--bg" id="association" aria-labelledby="asso-title">
+      <div class="container">
+        <div class="asso-grid">
+          <div class="asso__logo-wrap reveal">
+            <img src="docs/423.png" alt="Logo 432 HZ" class="asso__logo" width="250" height="250">
+          </div>
+          <div class="asso__content reveal">
+            <h2 class="section__title" id="asso-title">
+              <span class="section__title-accent">432 <span class="text-red">HZ</span></span>
+              Qui Sommes Nous
+            </h2>
+            <p>L&rsquo;association, cr&eacute;&eacute;e en 2021, a pour objet :</p>
+            <ul class="asso__list">
+              <li>La promotion et la diffusion du spectacle vivant.</li>
+              <li>L&rsquo;organisation de manifestations culturelles (concerts, spectacles, performances, f&ecirc;tes de quartier).</li>
+              <li>La r&eacute;alisation d&rsquo;activit&eacute;s &agrave; but &eacute;ducatif et pr&eacute;ventif.</li>
+            </ul>
+            <div class="asso__stats">
+              <div class="asso__stat">
+                <strong>81</strong> adh&eacute;rent&middot;e&middot;s
+              </div>
+              <div class="asso__stat">
+                <strong>22</strong> b&eacute;n&eacute;voles
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partenaires -->
+    <section class="section section--bg" id="partenaires" aria-labelledby="partenaires-title">
+      <div class="container">
+        <h2 class="section__title reveal" id="partenaires-title">
+          <span class="section__title-accent">Les Partenaires</span>
+          Les Nuits Nomades
+        </h2>
+        <p class="section__intro reveal">
+          Merci pour leur soutien. Sans eux, l&rsquo;&eacute;v&eacute;nement n&rsquo;aurait pas pu exister !
+        </p>
+        <div class="partners-grid">
+          <div class="partner-card reveal">
+            <div class="partner-card__logo">
+              <span class="partner-card__text-logo">AN<span class="text-red">N</span>ECY</span>
+              <small>ma ville et bien plus</small>
+            </div>
+            <span class="partner-card__badge">La Ville d&rsquo;Annecy</span>
+          </div>
+          <div class="partner-card reveal">
+            <div class="partner-card__logo">
+              <span class="partner-card__text-logo partner-card__text-logo--mante">La Mante<br><em>religieuz</em></span>
+            </div>
+            <span class="partner-card__badge">La Mante Religieuz</span>
+          </div>
+          <div class="partner-card reveal">
+            <div class="partner-card__logo">
+              <span class="partner-card__text-logo partner-card__text-logo--amnesty">AMNESTY<br><strong>INTERNATIONAL</strong></span>
+            </div>
+            <span class="partner-card__badge">Amnesty International</span>
+          </div>
+          <div class="partner-card partner-card--placeholder reveal">
+            <div class="partner-card__logo">
+              <span class="partner-card__text-logo partner-card__text-logo--tbd">?</span>
+            </div>
+            <span class="partner-card__badge">&Agrave; venir</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logos">
+            <img src="docs/423.png" alt="432 HZ" width="50" height="50">
+            <img src="docs/logo.png" alt="Les Nuits Nomades" width="60" height="60">
+          </div>
+          <p class="footer__tagline">&Eacute;v&eacute;nement culturel organis&eacute; par l&rsquo;association 432 HZ</p>
+        </div>
+        <div class="footer__nav">
+          <h3>Navigation</h3>
+          <a href="#projet">Le Projet</a>
+          <a href="#programmation">Programmation</a>
+          <a href="#activites">Activit&eacute;s</a>
+          <a href="#partenaires">Partenaires</a>
+        </div>
+        <div class="footer__contact">
+          <h3>Contact</h3>
+          <a href="tel:+33659324539">06 59 32 45 39</a>
+          <a href="mailto:association432hz@proton.me">association432hz@proton.me</a>
+          <p>34 Av de la R&eacute;publique<br>Cran-Gevrier, 74960 Annecy</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Association 432 HZ &mdash; Tous droits r&eacute;serv&eacute;s</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
