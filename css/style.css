@@ -1126,6 +1126,7 @@ ul {
 
   .hero__info {
     flex-direction: row;
+    justify-content: center;
     gap: var(--space-md);
   }
 
