@@ -68,21 +68,64 @@ document.addEventListener('DOMContentLoaded', () => {
   /* --- Mobile Nav Toggle --- */
   const navToggle = document.getElementById('nav-toggle');
   const navMenu = document.getElementById('nav-menu');
+  const navLinks = navMenu.querySelectorAll('.nav__link');
+
+  function closeMenu() {
+    navMenu.classList.remove('active');
+    navToggle.classList.remove('active');
+    navToggle.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+    navToggle.focus();
+  }
+
+  function openMenu() {
+    navMenu.classList.add('active');
+    navToggle.classList.add('active');
+    navToggle.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+    // Focus first link for keyboard users
+    setTimeout(() => navLinks[0]?.focus(), 100);
+  }
 
   navToggle.addEventListener('click', () => {
-    const isActive = navMenu.classList.toggle('active');
-    navToggle.classList.toggle('active');
-    navToggle.setAttribute('aria-expanded', isActive);
-    document.body.style.overflow = isActive ? 'hidden' : '';
+    if (navMenu.classList.contains('active')) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
   });
 
-  navMenu.querySelectorAll('.nav__link').forEach(link => {
+  navLinks.forEach(link => {
     link.addEventListener('click', () => {
-      navMenu.classList.remove('active');
-      navToggle.classList.remove('active');
-      navToggle.setAttribute('aria-expanded', 'false');
-      document.body.style.overflow = '';
+      if (navMenu.classList.contains('active')) {
+        navMenu.classList.remove('active');
+        navToggle.classList.remove('active');
+        navToggle.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      }
     });
+  });
+
+  // ESC key closes the mobile menu
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && navMenu.classList.contains('active')) {
+      closeMenu();
+    }
+  });
+
+  // Focus trap inside mobile menu
+  navMenu.addEventListener('keydown', (e) => {
+    if (!navMenu.classList.contains('active') || e.key !== 'Tab') return;
+    const focusables = [navToggle, ...navLinks];
+    const first = focusables[0];
+    const last = focusables[focusables.length - 1];
+    if (e.shiftKey && document.activeElement === first) {
+      e.preventDefault();
+      last.focus();
+    } else if (!e.shiftKey && document.activeElement === last) {
+      e.preventDefault();
+      first.focus();
+    }
   });
 
   /* --- Smooth Scroll with Offset --- */

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a1a"/>
+      <stop offset="50%" stop-color="#1a1a3a"/>
+      <stop offset="100%" stop-color="#0a0a1a"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#d4a017" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#d4a017" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e63946" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#e63946" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Decorative glows -->
+  <circle cx="950" cy="180" r="380" fill="url(#glow1)"/>
+  <circle cx="180" cy="500" r="300" fill="url(#glow2)"/>
+
+  <!-- Top accent bar -->
+  <rect x="80" y="80" width="100" height="6" fill="#d4a017" rx="3"/>
+
+  <!-- Small label -->
+  <text x="80" y="125" font-family="DejaVu Sans" font-size="20" font-weight="bold" fill="#d4a017">FESTIVAL CULTUREL GRATUIT</text>
+
+  <!-- Main title -->
+  <text x="80" y="245" font-family="DejaVu Sans" font-size="100" font-weight="bold" fill="#f0f0f5">LES NUITS</text>
+  <text x="80" y="350" font-family="DejaVu Sans" font-size="100" font-weight="bold" fill="#d4a017">NOMADES</text>
+
+  <!-- Edition badge -->
+  <text x="780" y="350" font-family="DejaVu Sans" font-size="60" font-weight="bold" fill="#e63946">#2</text>
+
+  <!-- Subtitle -->
+  <text x="80" y="425" font-family="DejaVu Serif" font-style="italic" font-size="42" font-weight="bold" fill="#f0c850">« Que Onda »</text>
+
+  <!-- Divider -->
+  <line x1="80" y1="475" x2="1120" y2="475" stroke="#d4a017" stroke-width="2" opacity="0.4"/>
+
+  <!-- Info row -->
+  <text x="80" y="525" font-family="DejaVu Sans" font-size="26" font-weight="bold" fill="#f0f0f5">📅  24 Avril 2026</text>
+  <text x="380" y="525" font-family="DejaVu Sans" font-size="26" font-weight="bold" fill="#f0f0f5">🕐  17h – 22h</text>
+  <text x="620" y="525" font-family="DejaVu Sans" font-size="26" font-weight="bold" fill="#f0f0f5">📍  Cran-Gevrier · Annecy</text>
+
+  <!-- Entrée Libre badge -->
+  <rect x="80" y="555" width="240" height="50" rx="25" fill="#d4a017"/>
+  <text x="200" y="588" font-family="DejaVu Sans" font-size="22" font-weight="bold" fill="#0a0a1a" text-anchor="middle">ENTRÉE LIBRE</text>
+
+  <!-- Bottom right tag -->
+  <text x="1120" y="585" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#6a6a88" text-anchor="end">Association 432 HZ</text>
+  <text x="1120" y="608" font-family="DejaVu Sans" font-size="14" fill="#6a6a88" text-anchor="end">lesnuitsnomades.fr</text>
+</svg>
