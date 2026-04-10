@@ -313,6 +313,8 @@ ul {
   gap: var(--space-md);
   padding: var(--nav-height) var(--space-md) var(--space-md);
   margin: 0;
+  clip-path: circle(150% at calc(100% - 50px) 50px);
+  animation: menuReveal 0.55s cubic-bezier(0.77, 0, 0.175, 1) forwards;
 }
 
 [data-theme="light"] .nav__menu.active {
@@ -325,7 +327,16 @@ ul {
   color: var(--color-text-primary);
   opacity: 1;
   padding: 0.75rem 1.25rem;
+  position: relative;
+  animation: menuLinkIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) backwards;
 }
+
+.nav__menu.active .nav__link:nth-child(1) { animation-delay: 0.18s; }
+.nav__menu.active .nav__link:nth-child(2) { animation-delay: 0.24s; }
+.nav__menu.active .nav__link:nth-child(3) { animation-delay: 0.30s; }
+.nav__menu.active .nav__link:nth-child(4) { animation-delay: 0.36s; }
+.nav__menu.active .nav__link:nth-child(5) { animation-delay: 0.42s; }
+.nav__menu.active .nav__link:nth-child(6) { animation-delay: 0.48s; }
 
 .nav__menu.active .nav__link::after {
   display: none;
@@ -334,6 +345,30 @@ ul {
 .nav__menu.active .nav__link:hover,
 .nav__menu.active .nav__link:focus {
   color: var(--color-gold);
+  transform: translateX(8px);
+  transition: transform var(--transition-fast), color var(--transition-fast);
+}
+
+@keyframes menuReveal {
+  from {
+    clip-path: circle(0% at calc(100% - 50px) 50px);
+  }
+  to {
+    clip-path: circle(150% at calc(100% - 50px) 50px);
+  }
+}
+
+@keyframes menuLinkIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+    filter: blur(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
 }
 
 /* --- Hero Section --- */
