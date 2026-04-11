@@ -33,10 +33,13 @@
   <meta name="twitter:description" content="Festival culturel gratuit aux couleurs du Mexique - 24 Avril 2026 - Annecy.">
   <meta name="twitter:image" content="https://nicowithmanyo.github.io/LesNuitsNomades/docs/og-image.jpg">
 
+  <!-- Preload LCP image -->
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=1600&q=70" fetchpriority="high">
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans:wght@400;600&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.css">
@@ -154,7 +157,7 @@
   <main id="main">
     <!-- Hero -->
     <section class="hero" id="hero">
-      <div class="hero__bg"></div>
+      <img class="hero__bg" src="https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=1600&q=70" alt="" width="1600" height="900" fetchpriority="high" decoding="async">
       <div class="hero__overlay"></div>
       <div class="hero__content container">
         <h1 class="hero__title">

@@ -216,11 +216,13 @@ ul {
   transition: width var(--transition-base), left var(--transition-base);
 }
 
-.nav__link:hover {
+.nav__link:hover,
+.nav__link[aria-current="page"] {
   color: var(--color-gold);
 }
 
-.nav__link:hover::after {
+.nav__link:hover::after,
+.nav__link[aria-current="page"]::after {
   width: 80%;
   left: 10%;
 }
@@ -385,9 +387,10 @@ ul {
 .hero__bg {
   position: absolute;
   inset: 0;
-  background-image: url('https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=1920&q=80');
-  background-size: cover;
-  background-position: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
   transform: scale(1.05);
   animation: heroZoom 20s ease-in-out infinite alternate;
 }
@@ -416,7 +419,8 @@ ul {
   position: relative;
   z-index: 2;
   text-align: center;
-  padding: calc(var(--nav-height) + var(--space-lg)) var(--space-sm) var(--space-lg);
+  padding: calc(var(--nav-height) + var(--space-md)) var(--space-sm) var(--space-md);
+  margin-top: var(--nav-height);
   color: #fff;
 }
 
@@ -603,33 +607,33 @@ ul {
 
 /* Le Projet - Mexican textiles / colors */
 #projet::before {
-  background-image: url('https://images.unsplash.com/photo-1534294668821-28a3054f4256?w=1920&q=75');
+  background-image: url('https://images.unsplash.com/photo-1534294668821-28a3054f4256?w=800&q=50');
 }
 
 /* Programmation - Mariachi / Day of the Dead */
 #programmation::before {
-  background-image: url('https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?w=1920&q=75');
+  background-image: url('https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?w=800&q=50');
 }
 
 /* Activites - Mexican street market */
 #activites::before {
-  background-image: url('https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?w=1920&q=75');
+  background-image: url('https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?w=800&q=50');
 }
 
 /* Edition 2025 - African sunset / drums */
 #edition-2025::before {
-  background-image: url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=1920&q=75');
+  background-image: url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=800&q=50');
   opacity: 0.1;
 }
 
 /* Association */
 #association::before {
-  background-image: url('https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=1920&q=75');
+  background-image: url('https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=800&q=50');
 }
 
 /* Partenaires */
 #partenaires::before {
-  background-image: url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1920&q=75');
+  background-image: url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&q=50');
 }
 
 /* Ensure section content is above the bg image */
