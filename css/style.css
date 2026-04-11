@@ -416,7 +416,7 @@ ul {
   position: relative;
   z-index: 2;
   text-align: center;
-  padding: calc(var(--nav-height) + var(--space-md)) var(--space-sm) var(--space-lg);
+  padding: calc(var(--nav-height) + var(--space-lg)) var(--space-sm) var(--space-lg);
   color: #fff;
 }
 
