@@ -610,6 +610,11 @@ ul {
   background-image: url('https://images.unsplash.com/photo-1534294668821-28a3054f4256?w=800&q=50');
 }
 
+/* Site - Park / open air */
+#site::before {
+  background-image: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=50');
+}
+
 /* Programmation - Mariachi / Day of the Dead */
 #programmation::before {
   background-image: url('https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?w=800&q=50');
@@ -1306,5 +1311,232 @@ ul {
   .reveal {
     opacity: 1;
     transform: none;
+  }
+}
+
+/* --- Image placeholders (à remplacer par les visuels du PDF) --- */
+.img-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 220px;
+  padding: var(--space-md);
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(230, 57, 70, 0.06),
+    rgba(230, 57, 70, 0.06) 10px,
+    rgba(230, 57, 70, 0.12) 10px,
+    rgba(230, 57, 70, 0.12) 20px
+  );
+  border: 2px dashed rgba(230, 57, 70, 0.5);
+  border-radius: var(--radius-md);
+  color: var(--color-text-secondary);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.img-placeholder::before {
+  content: '🖼️ ';
+  margin-right: 0.4rem;
+}
+
+.partner-card__logo .img-placeholder {
+  min-height: 80px;
+  width: 100%;
+  font-size: 0.7rem;
+}
+
+.partner-card__img {
+  max-width: 140px;
+  max-height: 80px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+/* --- Edition media (affiche + photos) --- */
+.edition-media {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+  align-items: start;
+}
+
+.edition-media figure {
+  margin: 0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.edition-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.edition-media__photos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+}
+
+@media (min-width: 640px) {
+  .edition-media__photos {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 768px) {
+  .edition-media {
+    grid-template-columns: minmax(220px, 320px) 1fr;
+  }
+  .edition-media__photos {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .edition-media__photos {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* --- Site / Parc --- */
+.site-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  align-items: stretch;
+}
+
+.site__media {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.site__text p {
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-sm);
+}
+
+.site__figure {
+  margin: 0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  background: var(--color-bg-secondary);
+}
+
+.site__figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.site__figure figcaption {
+  padding: 0.6rem var(--space-sm);
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  text-align: center;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.site__address {
+  margin-top: var(--space-md);
+  padding-top: var(--space-sm);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+  .site-grid {
+    grid-template-columns: 1.2fr 1fr;
+  }
+}
+
+/* --- Désalignement organique : casse la rigueur des grilles --- */
+@media (min-width: 768px) {
+  /* Value cards - Le Projet */
+  .value-card {
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+  }
+  .value-card.reveal--visible:nth-child(1) { transform: rotate(-1deg); }
+  .value-card.reveal--visible:nth-child(2) { transform: rotate(0.8deg) translateY(14px); }
+  .value-card.reveal--visible:nth-child(3) { transform: rotate(-0.6deg) translateY(-10px); }
+  .value-card.reveal--visible:nth-child(4) { transform: rotate(1.2deg) translateY(6px); }
+  .value-card.reveal--visible:hover {
+    transform: rotate(0deg) translateY(-4px);
+  }
+
+  /* Activity cards - Mais Aussi */
+  .activity-card {
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+  }
+  .activity-card.reveal--visible:nth-child(1) { transform: rotate(0.7deg) translateY(8px); }
+  .activity-card.reveal--visible:nth-child(2) { transform: rotate(-1.1deg) translateY(-6px); }
+  .activity-card.reveal--visible:nth-child(3) { transform: rotate(0.5deg) translateY(12px); }
+  .activity-card.reveal--visible:nth-child(4) { transform: rotate(-0.8deg) translateY(-4px); }
+  .activity-card.reveal--visible:nth-child(5) { transform: rotate(1deg) translateY(10px); }
+  .activity-card.reveal--visible:hover {
+    transform: rotate(0deg) translateY(-4px);
+  }
+
+  /* Partner cards */
+  .partner-card {
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+  }
+  .partner-card.reveal--visible:nth-child(1) { transform: rotate(-1.2deg) translateY(-8px); }
+  .partner-card.reveal--visible:nth-child(2) { transform: rotate(0.9deg) translateY(10px); }
+  .partner-card.reveal--visible:nth-child(3) { transform: rotate(-0.5deg) translateY(-4px); }
+  .partner-card.reveal--visible:nth-child(4) { transform: rotate(1.1deg) translateY(8px); }
+  .partner-card.reveal--visible:nth-child(5) { transform: rotate(-0.8deg) translateY(-12px); }
+  .partner-card.reveal--visible:nth-child(6) { transform: rotate(0.6deg) translateY(6px); }
+  .partner-card.reveal--visible:hover {
+    transform: rotate(0deg) translateY(-4px);
+  }
+
+  /* Site - figures du parc */
+  .site__figure {
+    transition: transform var(--transition-base);
+  }
+  .site__figure:nth-child(1) { transform: rotate(-1.5deg); }
+  .site__figure:nth-child(2) { transform: rotate(1.2deg) translateY(8px); }
+  .site__figure:hover {
+    transform: rotate(0deg) scale(1.02);
+  }
+
+  /* Edition 2025 - affiche & photos */
+  .edition-media__poster {
+    transform: rotate(-2deg);
+    transition: transform var(--transition-base);
+  }
+  .edition-media__poster:hover {
+    transform: rotate(0deg);
+  }
+  .edition-media__photos figure {
+    transition: transform var(--transition-base);
+  }
+  .edition-media__photos figure:nth-child(1) { transform: rotate(1.5deg) translateY(-6px); }
+  .edition-media__photos figure:nth-child(2) { transform: rotate(-1.2deg) translateY(10px); }
+  .edition-media__photos figure:hover {
+    transform: rotate(0deg);
+  }
+}
+
+/* Coupe le désalignement si l'utilisateur préfère réduire les animations */
+@media (prefers-reduced-motion: reduce) {
+  .value-card,
+  .activity-card,
+  .partner-card,
+  .site__figure,
+  .edition-media__poster,
+  .edition-media__photos figure {
+    transform: none !important;
   }
 }
