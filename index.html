@@ -280,12 +280,8 @@
       align-items: end;
     }
     .hero__content { }
-    .hero__poster {
-      display: none;
-    }
+    .hero__poster { display: none; }
     .hero__poster img {
-      width: 100%;
-      max-width: 380px;
       border-radius: var(--radius-lg);
       box-shadow: 0 20px 60px rgba(0,0,0,0.6), 0 0 80px rgba(230,160,32,0.1);
       transform: rotate(2deg);
@@ -293,6 +289,21 @@
     }
     .hero__poster img:hover {
       transform: rotate(0deg) scale(1.02);
+    }
+    .hero__top-group {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    .hero__poster--mobile {
+      display: block;
+      margin-bottom: 1rem;
+    }
+    .hero__poster--mobile img {
+      width: 140px;
+      border-radius: var(--radius);
+      box-shadow: 0 12px 36px rgba(0,0,0,0.5);
+      transform: rotate(-2deg);
     }
     @media (min-width: 900px) {
       .hero__inner {
@@ -304,6 +315,11 @@
         align-self: center;
         padding-top: 5rem;
       }
+      .hero__poster img {
+        width: 100%;
+        max-width: 380px;
+      }
+      .hero__poster--mobile { display: none; }
     }
     .hero__tag {
       display: inline-block;
@@ -1070,7 +1086,12 @@
       <div class="hero__overlay" aria-hidden="true"></div>
       <div class="hero__inner container">
         <div class="hero__content">
-          <span class="hero__tag">Entrée libre &middot; Événement solidaire</span>
+          <div class="hero__top-group">
+            <div class="hero__poster--mobile">
+              <img src="img/hero-que-onda.jpg" alt="Affiche Que Onda" width="140" height="198" loading="eager">
+            </div>
+            <span class="hero__tag">Entrée libre &middot; Événement solidaire</span>
+          </div>
           <h1 class="hero__title">
             Les Nuits<br>Nomades
             <em>&laquo; Que Onda &raquo;</em>
