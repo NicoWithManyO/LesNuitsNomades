@@ -709,8 +709,9 @@
        ACTIVITÉS
        ═══════════════════════════════════════ */
     .activities {
-      display: grid;
-      grid-template-columns: 1fr;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 1.2rem;
     }
     .act-card {
@@ -733,8 +734,9 @@
     .act-card__icon svg { width: 22px; height: 22px; stroke: var(--c-gold); fill: none; stroke-width: 2; }
     .act-card h3 { font-size: 1rem; font-weight: 700; color: #fff; margin-bottom: 0.3rem; }
     .act-card p { font-size: 0.88rem; color: var(--c-text2); line-height: 1.65; }
-    @media (min-width: 640px)  { .activities { grid-template-columns: repeat(2, 1fr); } }
-    @media (min-width: 1024px) { .activities { grid-template-columns: repeat(3, 1fr); } }
+    .act-card { width: 100%; }
+    @media (min-width: 640px)  { .act-card { width: calc(50% - 0.6rem); } }
+    @media (min-width: 1024px) { .act-card { width: calc(33.333% - 0.8rem); } }
 
     @media (min-width: 900px) {
       .act-card:nth-child(odd)  { transform: rotate(-0.5deg); }
@@ -1553,7 +1555,7 @@
         </div>
       </div>
       <div class="footer__bottom">
-        <p>&copy; 2026 Association 432 HZ — Tous droits réservés &middot; Site réalisé par <a href="https://manyo.dev" target="_blank" rel="noopener">manyO.dev</a></p>
+        <p>&copy; 2026 Association 432 HZ — Tous droits réservés &middot; Site réalisé par <a href="mailto:nicowithmanyo@gmail.com">manyO.dev</a></p>
       </div>
     </div>
   </footer>
