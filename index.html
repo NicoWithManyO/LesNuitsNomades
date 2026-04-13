@@ -665,8 +665,20 @@
       font-family: var(--ff-display);
       font-size: clamp(1.4rem, 2.5vw, 1.8rem);
       font-weight: 700;
-      color: #fff;
       margin: 0.4rem 0 0.25rem;
+      background: linear-gradient(90deg, var(--c-gold) 50%, #fff 50%);
+      background-size: 200% 100%;
+      background-position: 100% 0;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: background-position 0.35s linear, letter-spacing 0.4s var(--ease-out), filter 0.4s;
+    }
+    .tl-item:hover .tl-title {
+      background-position: 0% 0;
+      transition: background-position 0.6s linear, letter-spacing 0.4s var(--ease-out), filter 0.4s;
+      letter-spacing: 0.03em;
+      filter: drop-shadow(0 0 16px rgba(230,160,32,0.3));
     }
     .tl-artist {
       font-weight: 600;
