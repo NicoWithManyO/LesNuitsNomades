@@ -1053,6 +1053,59 @@
       .pillar, .act-card, .partner, .teranga-gallery img,
       .teranga-intro__poster { transform: none !important; }
     }
+
+    /* ═══════════════════════════════════════
+       LIGHTBOX
+       ═══════════════════════════════════════ */
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      z-index: 10000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(6,6,17,0.92);
+      backdrop-filter: blur(12px);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.35s ease, visibility 0.35s;
+      cursor: zoom-out;
+    }
+    .lightbox.open {
+      opacity: 1;
+      visibility: visible;
+    }
+    .lightbox img {
+      max-width: 92vw;
+      max-height: 90vh;
+      border-radius: var(--radius-lg);
+      box-shadow: 0 24px 80px rgba(0,0,0,0.6);
+      transform: scale(0.9);
+      transition: transform 0.4s var(--ease-spring);
+    }
+    .lightbox.open img {
+      transform: scale(1);
+    }
+    .lightbox__close {
+      position: absolute;
+      top: 1.2rem;
+      right: 1.5rem;
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 2rem;
+      cursor: pointer;
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      transition: background 0.3s;
+    }
+    .lightbox__close:hover {
+      background: rgba(255,255,255,0.1);
+    }
   </style>
 </head>
 <body>
@@ -1271,7 +1324,7 @@
         </div>
         <div class="site-grid">
           <div class="site-grid__media reveal">
-            <img src="img/parc-plan.jpg" alt="Plan du jardin du 8 Mai 1945 à Cran-Gevrier" loading="lazy">
+            <img src="img/parc-plan.jpg" alt="Plan du jardin du 8 Mai 1945 à Cran-Gevrier" loading="lazy" class="lightbox-trigger" style="cursor:zoom-in;">
             <img src="img/concert-nuit.jpg" alt="Concert nocturne en plein air lors de l'édition 2025" loading="lazy">
           </div>
           <div class="site-grid__text reveal">
@@ -1562,6 +1615,12 @@
     </div>
   </footer>
 
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-label="Image agrandie">
+    <button class="lightbox__close" aria-label="Fermer">&times;</button>
+    <img src="" alt="">
+  </div>
+
   <!-- ══════ SCRIPTS ══════ -->
   <script>
     /* ── Nav scroll ── */
@@ -1627,6 +1686,30 @@
       });
     }, { threshold: 0.5 });
     counters.forEach(el => cio.observe(el));
+
+    /* ── Lightbox ── */
+    const lightbox = document.getElementById('lightbox');
+    const lbImg = lightbox.querySelector('img');
+    const lbClose = lightbox.querySelector('.lightbox__close');
+
+    document.querySelectorAll('.lightbox-trigger').forEach(img => {
+      img.addEventListener('click', () => {
+        lbImg.src = img.src;
+        lbImg.alt = img.alt;
+        lightbox.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    function closeLightbox() {
+      lightbox.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    lbClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && lightbox.classList.contains('open')) closeLightbox(); });
   </script>
+
 </body>
 </html>
