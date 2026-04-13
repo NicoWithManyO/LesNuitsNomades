@@ -882,8 +882,9 @@
        PARTENAIRES
        ═══════════════════════════════════════ */
     .partners {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 1.2rem;
     }
     .partner {
@@ -923,8 +924,9 @@
     .partner__amnesty { font-weight: 800; color: var(--c-text); font-size: 0.85rem; line-height: 1.2; }
     .partner__manyo { font-family: var(--ff-mono); font-size: 1.3rem; font-weight: 700; color: var(--c-text); }
     .partner__manyo .o { color: #4E8CFF; font-size: 1.8em; font-weight: 900; line-height: 0.8; vertical-align: -0.05em; }
-    @media (min-width: 640px)  { .partners { grid-template-columns: repeat(3, 1fr); } }
-    @media (min-width: 1024px) { .partners { grid-template-columns: repeat(4, 1fr); } }
+    .partner { width: calc(50% - 0.6rem); }
+    @media (min-width: 640px)  { .partner { width: calc(33.333% - 0.8rem); } }
+    @media (min-width: 1024px) { .partner { width: calc(25% - 0.9rem); } }
 
     @media (min-width: 900px) {
       .partner:nth-child(odd)  { transform: rotate(-0.7deg); }
