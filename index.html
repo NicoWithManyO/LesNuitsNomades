@@ -1506,8 +1506,8 @@
             <span class="t-stat__label">Artistes</span>
           </div>
           <div class="t-stat">
-            <span class="t-stat__num" data-target="4">0</span>
-            <span class="t-stat__label">H de spectacle</span>
+            <span class="t-stat__num" data-target="4" data-suffix="H">0</span>
+            <span class="t-stat__label">de spectacle</span>
           </div>
         </div>
         <div class="teranga-gallery reveal">
@@ -1687,9 +1687,10 @@
         const tgt = +el.dataset.target;
         let cur = 0;
         const step = Math.max(1, Math.ceil(tgt / 50));
+        const suffix = el.dataset.suffix || '';
         const timer = setInterval(() => {
           cur = Math.min(cur + step, tgt);
-          el.textContent = cur;
+          el.textContent = cur + suffix;
           if (cur >= tgt) clearInterval(timer);
         }, 30);
         cio.unobserve(el);
