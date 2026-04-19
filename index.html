@@ -1618,6 +1618,7 @@
       </div>
       <div class="footer__bottom">
         <p>&copy; 2026 Association 432 HZ — Tous droits réservés &middot; Site réalisé par <a href="mailto:nicowithmanyo@gmail.com">manyO.dev</a></p>
+        <p id="visitor-count" style="margin-top:0.4rem;font-size:0.75rem;color:var(--c-text2);opacity:0.5;"></p>
       </div>
     </div>
   </footer>
@@ -1721,6 +1722,17 @@
   <!-- GoatCounter analytics -->
   <script data-goatcounter="https://lesnuitsnomades.goatcounter.com/count"
           async src="//gc.zgo.at/count.js"></script>
+
+  <!-- Visitor count display -->
+  <script>
+    fetch('https://lesnuitsnomades.goatcounter.com/counter/TOTAL.json')
+      .then(r => r.json())
+      .then(d => {
+        const el = document.getElementById('visitor-count');
+        if (el) el.textContent = d.count + ' visites';
+      })
+      .catch(() => {});
+  </script>
 
 </body>
 </html>
