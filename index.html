@@ -869,6 +869,114 @@
       margin: 0 auto;
       filter: drop-shadow(0 0 24px rgba(230,57,70,0.15));
     }
+    .asso-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      margin-top: 2.5rem;
+      padding: 0.85rem 1.6rem;
+      background: var(--c-gold);
+      color: var(--c-bg);
+      font-weight: 700;
+      font-size: 0.82rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: transform 0.3s var(--ease-spring), box-shadow 0.3s;
+    }
+    .asso-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(230,160,32,0.35);
+      text-decoration: none;
+      color: var(--c-bg);
+    }
+    .asso-cta svg {
+      width: 14px; height: 14px; stroke: currentColor; stroke-width: 2;
+      fill: none; stroke-linecap: round; stroke-linejoin: round;
+    }
+    .asso-cta__note {
+      display: block;
+      margin-top: 0.7rem;
+      font-size: 0.72rem;
+      color: var(--c-text2);
+      opacity: 0.75;
+      letter-spacing: 0.02em;
+    }
+
+    /* ═══════════════════════════════════════
+       STICKY DONATE CTA
+       ═══════════════════════════════════════ */
+    .sticky-donate {
+      position: fixed;
+      bottom: calc(1.2rem + env(safe-area-inset-bottom));
+      right: calc(1.2rem + env(safe-area-inset-right));
+      z-index: 90;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      padding: 0.85rem 1.4rem;
+      background: var(--c-red);
+      color: #fff;
+      font-family: var(--ff-body);
+      font-weight: 700;
+      font-size: 0.82rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 50px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.35), 0 0 0 1px rgba(255,255,255,0.06) inset;
+      opacity: 0;
+      transform: translateY(18px);
+      pointer-events: none;
+      transition: opacity 0.4s var(--ease-spring), transform 0.4s var(--ease-spring), box-shadow 0.3s;
+    }
+    .sticky-donate.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+    .sticky-donate.is-hidden-near-asso {
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(80px);
+    }
+    .sticky-donate:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(217,64,64,0.45), 0 0 0 1px rgba(255,255,255,0.08) inset;
+      text-decoration: none;
+      color: #fff;
+    }
+    .sticky-donate:focus-visible {
+      outline: 2px solid var(--c-gold);
+      outline-offset: 3px;
+    }
+    .sticky-donate svg {
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+    }
+    @media (max-width: 640px) {
+      .sticky-donate {
+        bottom: calc(1rem + env(safe-area-inset-bottom));
+        right: calc(1rem + env(safe-area-inset-right));
+        width: 52px;
+        height: 52px;
+        padding: 0;
+        border-radius: 50%;
+        justify-content: center;
+      }
+      .sticky-donate svg { width: 22px; height: 22px; }
+      .sticky-donate__label { display: none; }
+      .sticky-donate:active { transform: scale(0.96); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .sticky-donate {
+        transition: opacity 0.3s linear;
+        transform: none !important;
+      }
+      .sticky-donate.is-hidden-near-asso { transform: none !important; }
+    }
     .asso-grid__content p {
       color: var(--c-text2);
       margin-bottom: 0.8rem;
@@ -1526,6 +1634,15 @@
         <div class="asso-grid">
           <div class="asso-grid__logo reveal">
             <img src="img/logo-432hz.png" alt="Logo de l'association 432 HZ" width="180" height="180" loading="lazy">
+            <a href="https://www.helloasso.com/associations/association-432-hz/formulaires/1"
+               class="asso-cta"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Adhérer ou soutenir l'association via HelloAsso (nouvel onglet)">
+              Adhérer &middot; Soutenir
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+            </a>
+            <span class="asso-cta__note">via HelloAsso &middot; paiement sécurisé</span>
           </div>
           <div class="asso-grid__content reveal">
             <p class="section__eyebrow">L'Association</p>
@@ -1631,6 +1748,17 @@
     <img src="" alt="">
   </div>
 
+  <!-- Sticky donate CTA -->
+  <a href="https://www.helloasso.com/associations/association-432-hz/formulaires/1"
+     target="_blank" rel="noopener noreferrer"
+     class="sticky-donate" id="stickyDonate"
+     aria-label="Soutenir l'association 432 HZ sur HelloAsso (nouvel onglet)">
+    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 21s-7-4.35-7-10a4 4 0 0 1 7-2.65A4 4 0 0 1 19 11c0 5.65-7 10-7 10z"/>
+    </svg>
+    <span class="sticky-donate__label">Soutenir</span>
+  </a>
+
   <!-- ══════ SCRIPTS ══════ -->
   <script>
     /* ── Nav scroll ── */
@@ -1677,6 +1805,19 @@
       entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }});
     }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
     reveals.forEach(el => io.observe(el));
+
+    /* ── Sticky donate CTA ── */
+    const sticky = document.getElementById('stickyDonate');
+    const assoEl = document.getElementById('asso');
+    if (sticky && assoEl) {
+      requestAnimationFrame(() => sticky.classList.add('is-visible'));
+
+      const assoIO = new IntersectionObserver(
+        ([entry]) => sticky.classList.toggle('is-hidden-near-asso', entry.isIntersecting),
+        { threshold: 0.25 }
+      );
+      assoIO.observe(assoEl);
+    }
 
     /* ── Counter animation ── */
     const counters = document.querySelectorAll('[data-target]');
