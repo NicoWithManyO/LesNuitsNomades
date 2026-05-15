@@ -771,15 +771,16 @@
       top: 8px;
       width: 60px;
       text-align: right;
+      transform-origin: right center;
       font-family: var(--ff-poster);
       font-size: 1.15rem;
       color: var(--c-gold-light);
       letter-spacing: 0.08em;
-      transition: color 0.35s, transform 0.35s var(--ease-spring);
+      transition: color 0.35s, transform 0.4s var(--ease-spring);
     }
     .tl-item:hover .tl-time {
       color: var(--c-rose);
-      transform: translateX(-4px);
+      transform: translateX(-4px) scale(1.35);
     }
     .tl-title {
       font-family: var(--ff-display);
