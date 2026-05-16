@@ -1297,7 +1297,10 @@
       padding: 1.1rem 1.3rem;
       box-shadow: 0 -8px 22px rgba(0,0,0,0.45);
     }
-    .sticky-donate.is-footer-band span {
+    .sticky-donate__long { display: none; }
+    .sticky-donate.is-footer-band .sticky-donate__short { display: none; }
+    .sticky-donate.is-footer-band .sticky-donate__long {
+      display: inline;
       font-size: 1.05rem;
     }
     .footer.has-donate-band {
@@ -1924,7 +1927,8 @@
     <svg aria-hidden="true" viewBox="0 0 24 24">
       <path d="M12 21s-7-4.35-7-10a4 4 0 0 1 7-2.65A4 4 0 0 1 19 11c0 5.65-7 10-7 10z"/>
     </svg>
-    <span>Soutenir</span>
+    <span class="sticky-donate__short">Soutenir</span>
+    <span class="sticky-donate__long">Soutenir l'Association</span>
   </a>
 
   <!-- ══════ SCRIPTS ══════ -->
