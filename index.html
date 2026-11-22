@@ -3,67 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Les Nuits Nomades #3 — Swing Balkans | 05 Juin 2026 — Annecy</title>
-  <meta name="description" content="Les Nuits Nomades #3 Swing Balkans — Festival culturel gratuit le 5 juin 2026 au Jardin du 8 Mai 1945, Cran-Gevrier, Annecy. Concerts tsiganes, swing manouche, danses des Balkans, cirque et cuisine balkanique.">
-  <meta name="keywords" content="Les Nuits Nomades, Swing Balkans, festival Annecy, festival gratuit, balkans, tsigane, swing manouche, Cran-Gevrier, 432 HZ, culture, juin 2026">
+  <title>Les Nuits Nomades — Rendez-vous en 2027</title>
+  <meta name="description" content="Les Nuits Nomades vous donnent rendez-vous en 2027 pour plein d'événements culturels. Découvrez les photos des éditions précédentes.">
+  <meta name="keywords" content="Les Nuits Nomades, festival Annecy, festival gratuit, 432 HZ, culture, 2027">
   <meta name="author" content="Association 432 HZ">
   <meta name="theme-color" content="#1a0a0e">
   <link rel="canonical" href="https://nicowithmanyo.github.io/LesNuitsNomades/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Les Nuits Nomades #3 — Swing Balkans | 05 Juin 2026">
-  <meta property="og:description" content="Festival culturel gratuit aux couleurs des Balkans — 05 Juin 2026 — Jardin du 8 Mai 1945, Cran-Gevrier, Annecy.">
-  <meta property="og:image" content="https://nicowithmanyo.github.io/LesNuitsNomades/img/affiche-swing-balkans.jpg">
+  <meta property="og:title" content="Les Nuits Nomades — Rendez-vous en 2027">
+  <meta property="og:description" content="Rendez-vous en 2027 pour plein d'événements. Découvrez les photos des éditions précédentes.">
+  <meta property="og:image" content="https://nicowithmanyo.github.io/LesNuitsNomades/img/editions/DSC_3110.jpg">
   <meta property="og:locale" content="fr_FR">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500;1,700&family=Inter:wght@300;400;500;600;700&family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌹</text></svg>">
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Festival",
-    "name": "Les Nuits Nomades #3 — Swing Balkans",
-    "description": "Festival culturel gratuit aux couleurs des Balkans : concerts tsiganes, swing manouche, danses traditionnelles, cirque, conte et cuisine balkanique.",
-    "startDate": "2026-06-05T17:00:00+02:00",
-    "endDate": "2026-06-05T22:00:00+02:00",
-    "eventStatus": "https://schema.org/EventScheduled",
-    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-    "location": {
-      "@type": "Place",
-      "name": "Jardin du 8 Mai 1945",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Jardin du 8 Mai 1945",
-        "addressLocality": "Cran-Gevrier",
-        "postalCode": "74960",
-        "addressRegion": "Haute-Savoie",
-        "addressCountry": "FR"
-      }
-    },
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "EUR",
-      "availability": "https://schema.org/InStock"
-    },
-    "organizer": {
-      "@type": "Organization",
-      "name": "Association 432 HZ",
-      "email": "association432hz@proton.me",
-      "telephone": "+33659324539"
-    },
-    "performer": [
-      { "@type": "MusicGroup", "name": "Annecy Balkan Duo" },
-      { "@type": "MusicGroup", "name": "Bucarest Dragá" },
-      { "@type": "MusicGroup", "name": "Dacutsa" },
-      { "@type": "PerformingGroup", "name": "Cœur de Bosnie" },
-      { "@type": "PerformingGroup", "name": "Les Alexmandine" },
-      { "@type": "PerformingGroup", "name": "Les Ampoules Grillées" },
-      { "@type": "Person", "name": "Debora Barthe" }
-    ]
-  }
-  </script>
 
   <style>
     /* ═══════════════════════════════════════
@@ -443,6 +397,234 @@
         box-shadow: 0 14px 30px rgba(0,0,0,0.6), 0 0 0 5px var(--c-cream);
       }
       .hero__title-poster { font-size: 2.4rem; }
+    }
+
+    /* ═══════════════════════════════════════
+       HERO — Message de rendez-vous 2027
+       ═══════════════════════════════════════ */
+    .hero__merci {
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      pointer-events: none;
+      font-family: var(--ff-poster);
+      font-size: clamp(8rem, 23vw, 20rem);
+      line-height: 0.8;
+      letter-spacing: 0.02em;
+      color: rgba(244,230,197,0.105);
+      text-shadow: 0 0 60px rgba(200,144,67,0.08);
+      transform: rotate(-7deg);
+      user-select: none;
+    }
+    .hero--2027 {
+      min-height: min(860px, 94vh);
+      padding-top: 8rem;
+      padding-bottom: 6rem;
+      background: var(--c-bg-deep);
+    }
+    .hero--2027 .hero__overlay {
+      background:
+        radial-gradient(ellipse at 50% 43%, rgba(194,56,74,0.28), transparent 42%),
+        linear-gradient(180deg, rgba(12,3,6,0.45), rgba(12,3,6,0.38) 45%, var(--c-bg) 100%);
+    }
+    .hero--2027 .hero__pattern {
+      opacity: 0.3;
+    }
+    .hero--2027 .hero__inner {
+      width: 100%;
+    }
+    .hero--2027 .hero__inner {
+      display: grid;
+      grid-template-columns: 1fr;
+      place-items: center;
+      text-align: center;
+    }
+    .hero--2027 .hero__content {
+      position: relative;
+      max-width: 980px;
+      padding: clamp(2rem, 5vw, 4rem);
+    }
+    .hero--2027 .hero__content::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      border: 1px solid rgba(227,176,75,0.22);
+      border-radius: 50%;
+      background: radial-gradient(ellipse, rgba(12,3,6,0.48), transparent 72%);
+      transform: scale(1.15, 1.05);
+      pointer-events: none;
+    }
+    .hero--2027 .hero__title {
+      font-size: clamp(3rem, 7.5vw, 6.8rem);
+      line-height: 1.02;
+      text-wrap: balance;
+      text-shadow: 0 5px 35px rgba(0,0,0,0.5);
+    }
+    .hero--2027 .hero__title em {
+      display: block;
+      margin-top: 0.75rem;
+      color: var(--c-cream);
+      font-family: var(--ff-serif);
+      font-size: clamp(1.15rem, 2.3vw, 1.8rem);
+      letter-spacing: 0.04em;
+      font-weight: 400;
+    }
+    .hero--2027 .hero__tag {
+      margin-bottom: 1.6rem;
+      color: var(--c-gold-light);
+      border-color: rgba(227,176,75,0.38);
+      background: rgba(12,3,6,0.35);
+    }
+    .hero--2027 .hero__merci {
+      font-size: clamp(7rem, 24vw, 23rem);
+      letter-spacing: 0.08em;
+      color: rgba(244,230,197,0.09);
+      text-shadow: 0 0 100px rgba(200,144,67,0.18);
+    }
+    .hero--2027 .hero__cta {
+      margin-top: 2.4rem;
+      padding: 0.9rem 1.7rem;
+      font-family: var(--ff-body);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      box-shadow: 0 8px 26px rgba(200,144,67,0.22);
+    }
+    .hero--2027 .hero__cta:hover {
+      box-shadow: 0 12px 32px rgba(200,144,67,0.38);
+    }
+
+    /* ═══════════════════════════════════════
+       MOSAIQUE — Premières images au défilement
+       ═══════════════════════════════════════ */
+    .editions-mosaic {
+      position: relative;
+      padding: clamp(2.5rem, 6vw, 5rem) 1.5rem;
+      background:
+        radial-gradient(ellipse at 50% 0%, rgba(194,56,74,0.12), transparent 55%),
+        var(--c-bg-deep);
+      border-top: 1px solid rgba(227,176,75,0.18);
+    }
+    .editions-mosaic__header {
+      max-width: 1240px;
+      margin: 0 auto 2rem;
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+    .editions-mosaic__eyebrow {
+      display: block;
+      margin-bottom: 0.35rem;
+      color: var(--c-gold-light);
+      font-family: var(--ff-poster);
+      font-size: 0.95rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+    }
+    .editions-mosaic__title {
+      color: var(--c-cream);
+      font-family: var(--ff-display);
+      font-size: clamp(1.9rem, 4vw, 3.2rem);
+      font-weight: 400;
+      line-height: 1.05;
+    }
+    .editions-mosaic__title em {
+      color: var(--c-rose);
+      font-family: var(--ff-serif);
+      font-weight: 500;
+    }
+    .editions-mosaic__note {
+      max-width: 300px;
+      color: var(--c-text2);
+      font-size: 0.9rem;
+      text-align: right;
+    }
+    .editions-mosaic__grid {
+      max-width: 1240px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-auto-rows: clamp(100px, 12vw, 165px);
+      gap: clamp(0.45rem, 1vw, 0.8rem);
+    }
+    .editions-mosaic__item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 4px;
+      background: var(--c-bg2);
+      margin: 0;
+    }
+    .editions-mosaic__item:nth-child(1) { grid-column: span 6; grid-row: span 2; }
+    .editions-mosaic__item:nth-child(2) { grid-column: span 3; }
+    .editions-mosaic__item:nth-child(3) { grid-column: span 3; }
+    .editions-mosaic__item:nth-child(4) { grid-column: span 3; }
+    .editions-mosaic__item:nth-child(5) { grid-column: span 3; }
+    .editions-mosaic__item:nth-child(6) { grid-column: span 3; }
+    .editions-mosaic__item:nth-child(7) { grid-column: span 3; }
+    .editions-mosaic__item:nth-child(8) { grid-column: span 3; }
+    .editions-mosaic__item:nth-child(9) { grid-column: span 3; }
+    .editions-mosaic__item:nth-child(10) { grid-column: span 3; }
+    .editions-mosaic__item:nth-child(11) { grid-column: span 3; }
+    .editions-mosaic__item:nth-child(12) { grid-column: span 3; }
+    .editions-mosaic__item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.7s var(--ease-out), filter 0.7s;
+    }
+    .editions-mosaic__item:hover img {
+      transform: scale(1.035);
+      filter: saturate(1.08);
+    }
+    @media (max-width: 900px) {
+      .hero--2027 { min-height: 82vh; }
+      .editions-mosaic { padding: 2.5rem 1rem; }
+      .editions-mosaic__header { align-items: start; }
+      .editions-mosaic__note { max-width: 220px; }
+      .editions-mosaic__grid {
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: clamp(110px, 19vw, 170px);
+      }
+      .editions-mosaic__item:nth-child(n) {
+        grid-column: span 2;
+        grid-row: span 1;
+      }
+      .editions-mosaic__item:nth-child(1),
+      .editions-mosaic__item:nth-child(6) {
+        grid-column: span 3;
+      }
+    }
+    @media (max-width: 520px) {
+      .hero--2027 {
+        min-height: 78svh;
+        padding: 7rem 0 4rem;
+      }
+      .hero--2027 .hero__content { padding: 2rem 0.5rem; }
+      .hero--2027 .hero__content::before { transform: scale(1.02, 1.12); }
+      .hero--2027 .hero__title { font-size: clamp(2.7rem, 12vw, 4rem); }
+      .hero--2027 .hero__merci { font-size: 25vw; }
+      .editions-mosaic__header {
+        flex-direction: column;
+        gap: 0.75rem;
+        margin-bottom: 1.4rem;
+      }
+      .editions-mosaic__note { text-align: left; }
+      .editions-mosaic__grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 150px;
+      }
+      .editions-mosaic__item:nth-child(n) { grid-column: span 1; }
+      .editions-mosaic__item:nth-child(1) {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+      .editions-mosaic__item:nth-child(6) { grid-column: span 2; }
     }
 
     /* ═══════════════════════════════════════
@@ -1240,20 +1422,102 @@
        ═══════════════════════════════════════ */
     .lightbox {
       position: fixed; inset: 0;
-      background: rgba(12,3,6,0.95);
+      background: rgba(8,3,5,0.96);
+      backdrop-filter: blur(14px);
       display: none; place-items: center;
       z-index: 200;
-      padding: 2rem;
+      padding: 4.5rem 5rem 3.5rem;
+      opacity: 0;
+      transition: opacity 0.25s ease;
     }
-    .lightbox.open { display: grid; }
-    .lightbox img { max-width: 100%; max-height: 90vh; border-radius: var(--radius); }
+    .lightbox.open {
+      display: grid;
+      opacity: 1;
+    }
+    .lightbox__figure {
+      display: grid;
+      justify-items: center;
+      gap: 1rem;
+      max-width: 100%;
+      max-height: 100%;
+      margin: 0;
+    }
+    .lightbox__figure img {
+      max-width: min(100%, 1500px);
+      max-height: 78vh;
+      object-fit: contain;
+      border-radius: 3px;
+      box-shadow: 0 24px 80px rgba(0,0,0,0.55), 0 0 0 1px rgba(244,230,197,0.14);
+    }
+    .lightbox__caption {
+      color: var(--c-cream-mute);
+      font-family: var(--ff-serif);
+      font-size: 0.95rem;
+      text-align: center;
+    }
+    .lightbox__counter {
+      position: absolute;
+      bottom: 1.4rem;
+      left: 50%;
+      color: var(--c-text2);
+      font-size: 0.75rem;
+      letter-spacing: 0.18em;
+      transform: translateX(-50%);
+    }
     .lightbox__close {
-      position: absolute; top: 1.5rem; right: 1.5rem;
+      position: absolute; top: 1.25rem; right: 1.5rem;
       width: 44px; height: 44px;
       font-size: 1.6rem;
       color: var(--c-cream);
       background: rgba(244,230,197,0.1);
+      border: 1px solid rgba(244,230,197,0.2);
       border-radius: 50%;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .lightbox__close:hover,
+    .lightbox__nav:hover {
+      background: rgba(200,144,67,0.28);
+      transform: scale(1.06);
+    }
+    .lightbox__nav {
+      position: absolute;
+      top: 50%;
+      display: grid;
+      place-items: center;
+      width: 48px;
+      height: 48px;
+      color: var(--c-cream);
+      background: rgba(244,230,197,0.1);
+      border: 1px solid rgba(244,230,197,0.2);
+      border-radius: 50%;
+      font-size: 1.5rem;
+      transform: translateY(-50%);
+      transition: background 0.2s, transform 0.2s;
+    }
+    .lightbox__nav--prev { left: 1.5rem; }
+    .lightbox__nav--next { right: 1.5rem; }
+    .lightbox__nav[hidden] { display: none; }
+    .lightbox__nav--prev:hover { transform: translateY(-50%) scale(1.06); }
+    .lightbox__nav--next:hover { transform: translateY(-50%) scale(1.06); }
+    .lightbox__nav:disabled {
+      opacity: 0.35;
+      cursor: default;
+    }
+    @media (max-width: 600px) {
+      .lightbox { padding: 4.5rem 1rem 4rem; }
+      .lightbox__figure img { max-height: 72vh; }
+      .lightbox__nav {
+        top: auto;
+        bottom: 0.8rem;
+        width: 42px;
+        height: 42px;
+        transform: none;
+      }
+      .lightbox__nav--prev { left: 1rem; }
+      .lightbox__nav--next { right: 1rem; }
+      .lightbox__nav--prev:hover,
+      .lightbox__nav--next:hover { transform: scale(1.06); }
+      .lightbox__counter { bottom: 1.6rem; }
     }
 
     /* ═══════════════════════════════════════
@@ -1323,6 +1587,7 @@
           <span class="nav__brand-text">Les Nuits Nomades</span>
         </a>
         <nav class="nav__links" aria-label="Navigation principale">
+          <a href="#editions">Photos</a>
           <a href="#swing">Swing Balkans</a>
           <a href="#programme">Programme</a>
           <a href="#site">Le Site</a>
@@ -1340,6 +1605,7 @@
   </header>
 
   <div class="nav__mobile" id="mobile-nav" role="dialog" aria-label="Menu de navigation">
+    <a href="#editions">Photos</a>
     <a href="#swing">Swing Balkans</a>
     <a href="#programme">Programme</a>
     <a href="#site">Le Site</a>
@@ -1351,60 +1617,46 @@
   </div>
 
   <main>
-    <!-- ══════ HERO — Édition #3 ══════ -->
-    <section class="hero" id="hero">
+    <!-- ══════ HERO — Rendez-vous 2027 ══════ -->
+    <section class="hero hero--2027" id="hero">
       <div class="hero__bg" aria-hidden="true"></div>
       <div class="hero__overlay" aria-hidden="true"></div>
       <div class="hero__pattern" aria-hidden="true"></div>
+      <div class="hero__merci" aria-hidden="true">MERCI</div>
       <div class="hero__inner container">
         <div class="hero__content">
-          <div class="hero__poster--mobile">
-            <img src="img/affiche-swing-balkans.jpg" alt="Affiche Swing Balkans" width="200" loading="eager">
-          </div>
-          <span class="hero__tag">Entrée libre &middot; Événement solidaire</span>
-          <p class="hero__eyebrow">3<sup>ème</sup> Édition &middot; 2026</p>
+          <span class="hero__tag">Les Nuits Nomades</span>
           <h1 class="hero__title">
-            Les Nuits<br>Nomades
-            <em>« édition #3 »</em>
+            Rendez-vous en 2027
+            <em>Pour plein d'événements</em>
           </h1>
-          <span class="hero__title-poster">Swing Balkans</span>
-          <div class="hero__info-bar">
-            <span>
-              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-              <time datetime="2026-06-05T17:00">Vendredi 05 Juin 2026</time>
-            </span>
-            <span>
-              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              17h – 22h
-            </span>
-            <span>
-              <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              Jardin du 8 Mai 1945, Cran-Gevrier
-            </span>
-          </div>
-          <div class="hero__countdown" id="countdown" role="timer" aria-label="Compte à rebours">
-            <div class="hero__countdown-unit">
-              <span class="hero__countdown-num" id="days">--</span>
-              <span class="hero__countdown-label">Jours</span>
-            </div>
-            <div class="hero__countdown-unit">
-              <span class="hero__countdown-num" id="hours">--</span>
-              <span class="hero__countdown-label">Heures</span>
-            </div>
-            <div class="hero__countdown-unit">
-              <span class="hero__countdown-num" id="minutes">--</span>
-              <span class="hero__countdown-label">Minutes</span>
-            </div>
-            <div class="hero__countdown-unit">
-              <span class="hero__countdown-num" id="seconds">--</span>
-              <span class="hero__countdown-label">Secondes</span>
-            </div>
-          </div>
-          <a href="#programme" class="hero__cta">Découvrir le programme &darr;</a>
+          <a href="#editions" class="hero__cta">Découvrir les éditions &darr;</a>
         </div>
-        <div class="hero__poster">
-          <img src="img/affiche-swing-balkans.jpg" alt="Affiche officielle Les Nuits Nomades #3 — Swing Balkans" width="420">
+      </div>
+    </section>
+
+    <!-- ══════ MOSAIQUE — Éditions précédentes ══════ -->
+    <section class="editions-mosaic" id="editions" aria-label="Photos des éditions précédentes">
+      <header class="editions-mosaic__header">
+        <div>
+          <span class="editions-mosaic__eyebrow">Retour en images · 2026</span>
+          <h2 class="editions-mosaic__title">Une année <em>inoubliable</em></h2>
         </div>
+        <p class="editions-mosaic__note">Des instants de fête, de musique et de partage à revivre ensemble.</p>
+      </header>
+      <div class="editions-mosaic__grid">
+        <figure class="editions-mosaic__item reveal"><img src="img/editions/DSC_3110.jpg" alt="Les Nuits Nomades — édition précédente" loading="lazy"></figure>
+        <figure class="editions-mosaic__item reveal reveal-delay-1"><img src="img/editions/DSC_3047.jpg" alt="Les Nuits Nomades — édition précédente" loading="lazy"></figure>
+        <figure class="editions-mosaic__item reveal reveal-delay-2"><img src="img/editions/DSC_3032.jpg" alt="Les Nuits Nomades — édition précédente" loading="lazy"></figure>
+        <figure class="editions-mosaic__item reveal"><img src="img/editions/DSC_3182.jpg" alt="Les Nuits Nomades — édition précédente" loading="lazy"></figure>
+        <figure class="editions-mosaic__item reveal reveal-delay-1"><img src="img/editions/DSC_3243-Modifier.jpg" alt="Les Nuits Nomades — édition précédente" loading="lazy"></figure>
+        <figure class="editions-mosaic__item reveal reveal-delay-2"><img src="img/editions/DSC_3368.jpg" alt="Les Nuits Nomades — édition précédente" loading="lazy"></figure>
+        <figure class="editions-mosaic__item reveal"><img src="img/editions/DSC_3282.jpg" alt="Les Nuits Nomades — édition précédente" loading="lazy"></figure>
+        <figure class="editions-mosaic__item reveal reveal-delay-1"><img src="img/editions/DSC_3123.jpg" alt="Les Nuits Nomades — édition précédente" loading="lazy"></figure>
+        <figure class="editions-mosaic__item reveal reveal-delay-2"><img src="img/editions/DSC_3315.jpg" alt="Les Nuits Nomades — édition précédente" loading="lazy"></figure>
+        <figure class="editions-mosaic__item reveal"><img src="img/editions/DSC_3195.jpg" alt="Les Nuits Nomades — édition précédente" loading="lazy"></figure>
+        <figure class="editions-mosaic__item reveal reveal-delay-1"><img src="img/editions/DSC_3137.jpg" alt="Les Nuits Nomades — édition précédente" loading="lazy"></figure>
+        <figure class="editions-mosaic__item reveal reveal-delay-2"><img src="img/editions/DSC_3163.jpg" alt="Les Nuits Nomades — édition précédente" loading="lazy"></figure>
       </div>
     </section>
 
@@ -1914,9 +2166,15 @@
   </footer>
 
   <!-- Lightbox -->
-  <div class="lightbox" id="lightbox" role="dialog" aria-label="Image agrandie">
-    <button class="lightbox__close" aria-label="Fermer">&times;</button>
-    <img src="" alt="">
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Galerie photo" aria-hidden="true">
+    <button class="lightbox__close" type="button" aria-label="Fermer">&times;</button>
+    <button class="lightbox__nav lightbox__nav--prev" type="button" aria-label="Photo précédente">&#8249;</button>
+    <figure class="lightbox__figure">
+      <img src="" alt="">
+      <figcaption class="lightbox__caption"></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" type="button" aria-label="Photo suivante">&#8250;</button>
+    <span class="lightbox__counter" aria-live="polite"></span>
   </div>
 
   <!-- Sticky donate CTA -->
@@ -1955,22 +2213,6 @@
       burger.setAttribute('aria-expanded', 'false');
       document.body.style.overflow = '';
     }));
-
-    /* ── Countdown — Vendredi 5 juin 2026 17h ── */
-    const target = new Date('2026-06-05T17:00:00+02:00').getTime();
-    function tick() {
-      const diff = Math.max(0, target - Date.now());
-      const d = Math.floor(diff / 86400000);
-      const h = Math.floor((diff % 86400000) / 3600000);
-      const m = Math.floor((diff % 3600000) / 60000);
-      const s = Math.floor((diff % 60000) / 1000);
-      document.getElementById('days').textContent = String(d).padStart(2, '0');
-      document.getElementById('hours').textContent = String(h).padStart(2, '0');
-      document.getElementById('minutes').textContent = String(m).padStart(2, '0');
-      document.getElementById('seconds').textContent = String(s).padStart(2, '0');
-    }
-    tick();
-    setInterval(tick, 1000);
 
     /* ── Reveal on scroll ── */
     const reveals = document.querySelectorAll('.reveal');
@@ -2027,25 +2269,88 @@
     const lightbox = document.getElementById('lightbox');
     const lbImg = lightbox.querySelector('img');
     const lbClose = lightbox.querySelector('.lightbox__close');
+    const lbPrev = lightbox.querySelector('.lightbox__nav--prev');
+    const lbNext = lightbox.querySelector('.lightbox__nav--next');
+    const lbCaption = lightbox.querySelector('.lightbox__caption');
+    const lbCounter = lightbox.querySelector('.lightbox__counter');
+    let activeGallery = [];
+    let activeImageIndex = 0;
+    let lightboxTrigger;
 
-    document.querySelectorAll('.lightbox-trigger, .retro__gallery img').forEach(img => {
+    function showLightboxImage(index) {
+      activeImageIndex = (index + activeGallery.length) % activeGallery.length;
+      const img = activeGallery[activeImageIndex];
+      lbImg.src = img.src;
+      lbImg.alt = img.alt;
+      lbCaption.textContent = img.alt;
+      lbCounter.textContent = `${String(activeImageIndex + 1).padStart(2, '0')} / ${String(activeGallery.length).padStart(2, '0')}`;
+      const hasMultiple = activeGallery.length > 1;
+      lbPrev.hidden = !hasMultiple;
+      lbNext.hidden = !hasMultiple;
+    }
+
+    function openLightbox(img) {
+      const gallery = img.closest('.editions-mosaic__grid, .retro__gallery');
+      activeGallery = gallery ? [...gallery.querySelectorAll('img')] : [img];
+      lightboxTrigger = img;
+      showLightboxImage(activeGallery.indexOf(img));
+      lightbox.classList.add('open');
+      lightbox.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      lbClose.focus();
+    }
+
+    document.querySelectorAll('.lightbox-trigger, .retro__gallery img, .editions-mosaic__item img').forEach(img => {
       img.style.cursor = 'zoom-in';
-      img.addEventListener('click', () => {
-        lbImg.src = img.src;
-        lbImg.alt = img.alt;
-        lightbox.classList.add('open');
-        document.body.style.overflow = 'hidden';
+      img.addEventListener('click', () => openLightbox(img));
+      img.tabIndex = 0;
+      img.setAttribute('role', 'button');
+      img.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          openLightbox(img);
+        }
       });
     });
 
     function closeLightbox() {
       lightbox.classList.remove('open');
+      lightbox.setAttribute('aria-hidden', 'true');
       document.body.style.overflow = '';
+      lightboxTrigger?.focus();
     }
 
     lbClose.addEventListener('click', closeLightbox);
+    lbPrev.addEventListener('click', () => showLightboxImage(activeImageIndex - 1));
+    lbNext.addEventListener('click', () => showLightboxImage(activeImageIndex + 1));
     lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
-    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && lightbox.classList.contains('open')) closeLightbox(); });
+    document.addEventListener('keydown', (e) => {
+      if (!lightbox.classList.contains('open')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'Tab') {
+        const focusable = [...lightbox.querySelectorAll('button:not([hidden]):not(:disabled)')];
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (!lightbox.contains(document.activeElement)) {
+          e.preventDefault();
+          (e.shiftKey ? last : first).focus();
+        } else if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
+      }
+      if (e.key === 'ArrowLeft' && activeGallery.length > 1) {
+        e.preventDefault();
+        showLightboxImage(activeImageIndex - 1);
+      }
+      if (e.key === 'ArrowRight' && activeGallery.length > 1) {
+        e.preventDefault();
+        showLightboxImage(activeImageIndex + 1);
+      }
+    });
   </script>
 
   <!-- GoatCounter analytics -->
